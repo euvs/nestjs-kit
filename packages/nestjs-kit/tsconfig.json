@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "rootDirs": [
+      "./src"
+    ],
+    "module": "commonjs",
+    "noImplicitAny": false,
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es6",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "moduleResolution": "node",
+    "types": [
+      "node","mocha"
+    ],
+    "lib": [
+      "es6",
+      "es2015",
+      "es2017",
+      "esnext",
+      "esnext.asynciterable"
+    ]
+  },
+  "include": [
+    "src/**/*",
+    "test/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

@@ -1,0 +1,35 @@
+build
+dist
+node_modules
+.env*
+
+test/**/*.js
+test/**/*.js.map
+
+# User-specific stuff:
+.idea/workspace.xml
+.idea/tasks.xml
+
+.idea/jsLibraryMappings.xml
+
+# Sensitive or high-churn files:
+.idea/dataSources/
+.idea/dataSources.ids
+.idea/dataSources.xml
+.idea/dataSources.local.xml
+.idea/sqlDataSources.xml
+.idea/dynamic.xml
+.idea/uiDesigner.xml
+
+.idea/codeStyle*
+.idea/emacs.xml
+.idea/dictionaries
+.idea/modules.xml
+
+uploads
+dist
+
+packages/server
+
+
+.idea

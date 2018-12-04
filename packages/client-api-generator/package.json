@@ -1,0 +1,38 @@
+{
+  "name": "@euvs/nestjs-client-api-generator",
+  "version": "0.1.0",
+  "description": "Client API codegen for Nest.js",
+  "private": false,
+  "author": "Eugene Vostrikov",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "build:watch": "tsc -p tsconfig.json -w",
+    "build": "tsc -p tsconfig.json",
+    "format": "prettier lib/**/*.ts --write",
+    "prepublish:next": "npm run build",
+    "publish:next": "npm publish --access public --tag next",
+    "prepublish:npm": "npm run build",
+    "publish:npm": "npm publish --access public"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "path-to-regexp": "^2.4.0"
+  },
+  "devDependencies": {
+    "@nestjs/common": "^5.0.0",
+    "@nestjs/core": "^5.0.0",
+    "@types/node": "^10.3.5",
+    "reflect-metadata": "^0.1.12",
+    "typescript": "^3.2.1"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^5.0.0",
+    "@nestjs/core": "^5.0.0"
+  },
+  "optionalDependencies": {
+    "@nestjs/common": "^5.0.0",
+    "@nestjs/core": "^5.0.0"
+  }
+}
