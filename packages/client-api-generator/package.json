@@ -33,5 +33,13 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://euvs@github.com/euvs/nestjs-kit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/euvs/nestjs-kit/issues"
+  },
+  "homepage": "https://github.com/euvs/nestjs-kit#readme"
 }
