@@ -15,7 +15,8 @@
     "test": "NODE_ENV=test npx mocha ./**/*spec.ts",
     "build": "tsc -p ./ ",
     "build:watch": "nodemon",
-    "build:ts:watch": "NODE_ENV='development' tsc --watch -p ./"
+    "build:ts:watch": "NODE_ENV='development' tsc --watch -p ./",
+    "prepublish": "npm run build"
   },
   "dependencies": {
     "@nestjs/common": "^5.4.1",
@@ -76,5 +77,8 @@
     "tsconfig-paths": "^3.5.0",
     "tslint-config-prettier": "1.6.0"
   },
-  "author": "Eugene Vostrikov"
+  "author": "Eugene Vostrikov",
+  "publishConfig": {
+    "access": "public"
+  }
 }
