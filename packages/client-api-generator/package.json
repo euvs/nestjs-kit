@@ -1,6 +1,6 @@
 {
   "name": "@euvs/nestjs-client-api-generator",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Client API codegen for Nest.js",
   "private": false,
   "author": "Eugene Vostrikov",
