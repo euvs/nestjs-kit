@@ -1,5 +1,5 @@
 import * as jwt from 'jsonwebtoken';
-import {BadRequestException, Inject, Injectable} from '@nestjs/common';
+import {BadRequestException, Inject, Injectable, InternalServerErrorException} from '@nestjs/common';
 import {IUser} from '../db-models';
 import {UsersService} from '../users';
 import * as crypto from 'crypto';
@@ -36,6 +36,9 @@ export class AuthService {
     }
 
     public async populateUser(userOrId: ModelOrId<IUser>): Promise<IUser> {
+        if (!userOrId) {
+            throw new InternalServerErrorException('Expected user or userId');
+        }
         let user: IUser;
         if (ModelType.isId(userOrId)) {
             user = await this.userService.findById(null, ModelType.extractId(userOrId));
