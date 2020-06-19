@@ -1,3 +1,5 @@
-# Toolbox for backend development
+```
+THIS PROJECT IS NOT BEING MAINTAINED AND DEVELOPED ANYMORE!
+```
 
-Docs will be here soon...
+# Toolbox for NestJS backend development
